@@ -1,0 +1,36 @@
+man : man pages
+::help : used for getting help on a command 
+
+Navigation
+pwd : current working directory
+cd : change directory
+ls : list directory
+ls -l : long list
+ls -la :
+
+Files and Dirs
+touch : create a file 
+cp : copy a file
+mv : move a file
+rm : remove a file
+rm -r : remove recursive
+mkdir : make a directory
+mkdir -p :
+
+Viewing text
+cat : view file contents
+less : 
+head :
+tail :
+tail -f :
+
+Searching
+find : 
+find /path -name :
+grep :
+grep -i :
+grep -r :
+
+
+Redirection & pipes
+> , >>, <, |, 2>, &>

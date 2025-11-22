@@ -1,0 +1,52 @@
+Understanding Permissions
+-rwxr-xr--
+[1] the file type ( - )
+[2-4] user permissions ( rwx ) 
+[5-7] group permissions ( r-x )
+[8-10] other/world permissions (r--)
+
+r = read
+w = write
+x = execute
+- = no permissions
+
+chmod is used to give permissions
+u is for user
+g is for group
+o is for other
++ / - is used to determine whether adding or removing permissions
+
+Examples
+chmod u+x file.sh : this gives the user execute permissions to file.sh
+chmod g-w file.sh : this removes write permissions to file.sh for a group
+
+Number formatting
+r = 4
+w = 2
+x = 1
+- = 0
+
+chmod 755 file.sh = rwxr-xr-xr
+xxx-xxx-xxx
+
+User & Group Ownership
+groupadd [options] groupname
+sudo usermod -aG groupname username
+
+sudo chown admin:admin file.txt : sets both user and group
+sudo chgrp developers file.txt : sets just group
+-R can be used to recursively set permissions
+
+Sticky Bit 1(xxx)
+chmod 1777 /some/dir = only the owner of files can delete files but everyone can read
+
+Setuid (for files only)
+Makes it so that when a file is executed its ran as the owner of the file
+4 is used to do this
+chmod 4755 file (see the 4)
+
+Setgid (on both files and directories)
+On files it'll run as the files group (permissions of the group)
+used a 2 to run this
+chmod 2755 file (see the 2)
+If ran on directories it makes any file in that directory inherit that group

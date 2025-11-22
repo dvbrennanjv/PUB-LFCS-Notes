@@ -1,0 +1,6 @@
+Domain and Weights
+Operations and Deployments - 25%
+Networking - 25%
+Storage - 20%
+Essential Commands - 20%
+User and Groups - 10%
