@@ -10,6 +10,7 @@ Use ls-l to get the output
 
 
 REVIEW
+if using the rwx method to chmod you have to use u=rwx,g=r-w,o= 
 
 
 ----------------------------------------------------------------
@@ -28,7 +29,9 @@ Use ls-ld shared_devops to output
 
 
 REVIEW
-
+creating a group is done by groupadd [options] groupname
+adding a user to group = usermod -aG groupname username
+set a group to a dir/file = 
 ----------------------------------------------------------------
 
 Task C Sticky bits
