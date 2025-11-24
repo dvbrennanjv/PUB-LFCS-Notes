@@ -1,0 +1,50 @@
+Task A Service Management
+----------------------------------------------------------------
+Check the status of the cron service
+Restart the cron service and verify its running
+Check if its enabled on boot
+if disabled, enable it on boot
+
+
+REVIEW
+
+
+
+----------------------------------------------------------------
+
+Task B Journalctl
+----------------------------------------------------------------
+Show the last 15 log lines for the cron service
+Show only logs from the current boot
+Show logs from the last 5 minutes
+
+
+REVIEW
+
+----------------------------------------------------------------
+
+Task C Process Management
+----------------------------------------------------------------
+Run sleep 200 &
+Show all running jobs
+Find the PID of the sleep process
+Send a job termination to that PID
+Verify that the job is stopped
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task 4 Masking
+----------------------------------------------------------------
+Mask the cron service
+Try to start it
+Unmask it
+Start it
+
+
+REVIEW
+
+
+----------------------------------------------------------------

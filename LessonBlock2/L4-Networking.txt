@@ -1,0 +1,37 @@
+Networking commands
+ip addr
+ip link
+ip route
+
+ip addr show : will show all interfaces
+
+Ubuntu uses netplan for configuration
+cat /etc/netplan/*.yaml
+sudo netplan apply 
+
+hostname : show hostname
+sudo hostnamectl set-hostname $name : used to set our hostname
+
+can find DNS mappings in /etc/hosts
+dns config is found at /etc/resolv.conf
+
+can use dig / nslookup / host for running dns checks
+
+routes
+ip route : shows the routing table
+ping : to test connectivity to an ip
+traceroute : traces the route to an ip
+
+sudo apt install traceroute
+
+Firewall
+sudo ufw status : shows status of Firewall
+sudo ufw enable/disable : turns on/off the Firewall
+
+Ways to add/deny to the Firewall
+sudo ufw allow ssh
+sudo ufw allow 8080/tcp
+sudo ufw deny 3306
+
+Deleting a rule
+sudo ufw delete allow 8080/tcp

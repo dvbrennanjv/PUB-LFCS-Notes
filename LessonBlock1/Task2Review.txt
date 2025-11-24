@@ -1,0 +1,49 @@
+Task A Permissions Modifications
+----------------------------------------------------------------
+Inside ~/lfcs_practice 
+Go to scripts and make the check_disk.sh executable only by your
+Remove read access for "others"
+Give group execute permissions
+
+Try both through symbolic or numberic
+Use ls-l to get the output
+
+
+REVIEW
+if using the rwx method to chmod you have to use u=rwx,g=r-w,o= 
+
+
+----------------------------------------------------------------
+
+Task B Creating users and groups
+----------------------------------------------------------------
+Create a group called devops
+Add your user to that group
+Create a shared_devops directory
+
+Set the group owner as devops
+rwx for user , rwx for group and no permissions for others
+Apply setgid to the shared_devops directory
+
+Use ls-ld shared_devops to output
+
+
+REVIEW
+creating a group is done by groupadd [options] groupname
+adding a user to group = usermod -aG groupname username
+set a group to a dir/file = 
+----------------------------------------------------------------
+
+Task C Sticky bits
+----------------------------------------------------------------
+make a tmp_test directory
+
+Apply a sticky bit so everyone can write
+But only owners can delete their own files
+
+ls -ld tmp_test for output
+
+REVIEW
+
+
+----------------------------------------------------------------

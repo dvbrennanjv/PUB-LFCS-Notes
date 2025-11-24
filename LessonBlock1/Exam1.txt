@@ -1,0 +1,43 @@
+Create the following directory structure
+/review_practice/
+/review_practice/configs
+/review_practice/logs
+/review_practice/scripts
+
+In logs create 3 files
+system.log , auth.log , kernel.log
+
+Move auth.log into configs/ and rename it to security.log
+Copy kernel.log to configs/
+List only .log files under the entire directory recursively
+
+---------------------------------------------------------------------------
+
+In scripts/ create a file called cleanup.sh with 4 lines of text in it
+Set the following permissions to it using octal
+You : read , write, execute
+Group : read, execute
+Others : no access
+
+Create a group called ops_team
+Change the group of review_practice/scripts/ to ops_team
+Set that dir so that any new file inherits the group ops_team
+Set that no one except you + the ops_team can access that dir
+
+---------------------------------------------------------------------------
+
+Check the status of the cron service
+Restart the cron service
+Verify that it is enabled at boot
+Show the last 10 journal entries for cron
+
+Start the following background process
+yes "LFCS test" > /dev/null &
+Find its PID, terminate it and verify its no longer running
+
+
+---------------------------------------------------------------------------
+REVIEW
+To find its 
+find ~/review_practice -type f -name "*.log"
+

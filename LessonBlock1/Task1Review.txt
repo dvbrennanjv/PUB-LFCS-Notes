@@ -1,0 +1,53 @@
+Task A Filesystem Drill
+----------------------------------------------------------------
+In your home directory:
+Create a directory structure:
+~/lfcs_practice/
+    logs/
+    configs/
+    scripts/
+
+Inside logs/, create 3 empty files:
+app.log
+db.log
+access.log
+
+Move access.log into configs/ and rename it to nginx-access.log.
+Copy db.log into configs/ (keeping the same name).
+Delete app.log.
+
+
+REVIEW
+When moving use relative paths by ~ or .. if deeper in a directory
+
+----------------------------------------------------------------
+
+Task B Searching and Filters
+----------------------------------------------------------------
+In scripts/, create a file called check_disk.sh and add at least 5 lines of anything (dummy echo commands or comments are fine).
+
+Show just the first 3 lines of that file using a command (don’t open an editor).
+
+Show just the last 2 lines.
+
+Use one command to show only the lines that contain the word disk (case-insensitive).
+
+
+REVIEW
+> is used to overwrite while >> is to Append
+For searching inside files use  "grep -i"
+----------------------------------------------------------------
+
+Task C Pipes and Redirection
+----------------------------------------------------------------
+List all files under ~/lfcs_practice (recursively), but only show the ones with .log in the name.
+
+Send the list from step 1 into a file called logfiles.txt located in ~/lfcs_practice.
+
+Append the current date (using a command like date) to the end of logfiles.txt without overwriting it.
+
+REVIEW
+Its better to use "find" when searching for specific files within directories
+find directory -name "file"
+
+----------------------------------------------------------------

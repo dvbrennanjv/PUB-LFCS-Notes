@@ -1,0 +1,70 @@
+Task A DNS Troubleshooting 
+----------------------------------------------------------------
+Short dig example.com and google.com
+do a reverse lookup on 8.8.8.8
+Use dig on youtube.com but specify the 1.1.1.1 NS
+
+
+REVIEW
+
+
+
+----------------------------------------------------------------
+
+Task B Routing & Gateway 
+----------------------------------------------------------------
+Show the current route table
+Show only the default route table
+Explain what the default route is
+Display your ARP table
+
+
+REVIEW
+
+----------------------------------------------------------------
+
+Task C Netplan Interpretation
+----------------------------------------------------------------
+Check if your machine is using a static IP or not
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task D Active Connections
+----------------------------------------------------------------
+Show all listening TCP/UDP ports
+Show all established connections
+Show which processes own the listening sockets
+
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task E - Ipv6 Checks
+----------------------------------------------------------------
+Show all IPv6 addresses
+ping google.com using Ipv6
+dig google using Ipv6
+
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task F - UFW Advanced
+----------------------------------------------------------------
+Show rules with numbering
+Add a rule allowing TCP on 8080
+Add a rule denying access from 10.0.2.100
+Delete rule #2
+
+
+REVIEW
+
+
+----------------------------------------------------------------

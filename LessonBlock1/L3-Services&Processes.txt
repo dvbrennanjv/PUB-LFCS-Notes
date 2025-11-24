@@ -1,0 +1,33 @@
+A service is a daemon managed by systemd (apache, ssh, docker, etc)
+
+systemctl status $service - to check a service
+sudo systemctl start/stop $service - to stop and start a service
+restart - to restart a service
+reload - reloads the config without restarting
+enable/disable - will enable/disable the service to start on boot
+can use is-enable/disable for checking
+
+Masking a service prevents it from starting (even manually)
+sudo systemctl mask/unmask $service
+
+journalctl -u $service - shows all logs for a service
+-b : to show current boot
+-f : for real time monitoring
+-n 20 : shows last 20 lines
+--since today/"2024-11-01"/"10 minutes ago" : for specific ranges
+
+systemctl --failed (to show failed services)
+
+
+Processes & Signals
+ps aux : list all processes 
+ps aux | grep $service : list specifc service
+
+kill $PID : kills by PID
+kill -9 $PID : force kills
+killall $service : kill by name
+
+somecommand & : used to run a command in the background
+
+jobs : to see all jobs
+fg %1 : brings to foreground

@@ -1,0 +1,51 @@
+Task A Interface & IP Info
+----------------------------------------------------------------
+Show all active interfaces
+Show only IPv4 addresses
+Show your default route
+Show your routing table
+
+
+REVIEW
+
+
+
+----------------------------------------------------------------
+
+Task B Hostname & DNS
+----------------------------------------------------------------
+Check your hostname
+Change it to "lfcs-node"
+Show your DNS nameservers
+Use dig to look up example.com
+
+
+REVIEW
+
+----------------------------------------------------------------
+
+Task C Connectivity
+----------------------------------------------------------------
+Ping 8.8.8.8 for 4 packets
+Ping google.com for 4 packets
+Traceroute to google.com
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task 4 Firewall
+----------------------------------------------------------------
+Check UFW status
+Enable if disabled
+Allow SSH traffic
+Deny port 2222/tcp
+Show Firewall rules
+
+
+
+REVIEW
+
+
+----------------------------------------------------------------
