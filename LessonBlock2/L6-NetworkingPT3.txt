@@ -1,0 +1,22 @@
+Static routes
+sudo ip route add 192.168.50.0/24 via 10.0.2.2
+sudo ip route del 192.168.50.0/24
+
+Can also add routes via Netplan
+routes:
+    - to: 192.168.50.0/24
+      via: 10.0.2.2
+
+Clearing the arp table
+sudo ip neigh flush dev enp0s3
+
+Adding a static entry
+sudo ip neigh add 10.0.2.2 lladdr 52:55:aa:00:00:02 dev enp0s3
+
+
+To see iptables
+sudo iptables -L -n -v
+sudo iptables -t nat -L 
+
+
+Can find host in /etc/hosts

@@ -1,0 +1,70 @@
+Task A Hostnames 
+----------------------------------------------------------------
+Show your current hostname
+Change to lfcs-final-node
+Verify Change
+Add 10.0.2.60   webserver.local webserver to host file 
+try pinging that host
+
+REVIEW
+
+
+
+----------------------------------------------------------------
+
+Task B DNS via systemd-resolved
+----------------------------------------------------------------
+Show your current dns using systemd-resolved
+Query example.com use systemd-resolved
+Temp change dns to 1.1.1.1 using resolvectl
+
+
+REVIEW
+
+----------------------------------------------------------------
+
+Task C Interface Management
+----------------------------------------------------------------
+Bring your nic down
+Verify its down
+Bring it back up
+verify connectiviy by pinging
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task D Persist Routes
+----------------------------------------------------------------
+Add a Persistent route (172.16.50.0/24 via 10.0.2.2)
+apply via netplan
+verify the route
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task E Firewalld
+----------------------------------------------------------------
+Install firewalld 
+Start firewalld
+Add port 9090 via firewalld
+verify you can see it
+
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task F 
+----------------------------------------------------------------
+Check if there is NIC bonding
+
+
+REVIEW
+
+
+----------------------------------------------------------------

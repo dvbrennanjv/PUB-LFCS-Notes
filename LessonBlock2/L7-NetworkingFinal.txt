@@ -1,0 +1,45 @@
+/etc/hosts = local DNS mapping
+/etc/nswitch.conf = dictates the order of how linux resolves names
+
+systemctl status systemd-resolved = check DNS status
+resolvctl status = shows current dns servers
+sudo resolvectl dns enp0s3 1.1.1.1 8.8.8.8 = temporarily setting a dns servers
+
+/etc/resolv.conf is a symlink to /run/systemd/resolve/stub-resolv.conf
+
+
+ip link
+sudo ip link set $NIC up/down = sets the link up or down
+ip link show $NIC = shows status of interface
+
+Temporary routes are added using ip route add/Delete
+Persistent routes are added via netplan
+routes:
+    - to: ip
+      via: gateway
+
+
+firewalld (RHEL/CentOS version of UFW)
+firewall-cmd --get-active-zones
+firewall-cmd --add-port=8080/tcp --permanent
+firewall-cmd --reload
+firewall-cmd --list-all
+
+
+NIC bonding (combing interfaces)
+cat /proc/net/bonding/bond0 = check bonded interfaces
+ip link show bond0 = check status
+
+
+Common Fixes
+
+Interface up but no IP
+sudo dhclient -v $NIC
+
+DNS works for IPs but not hostnames (missing dns servers)
+
+No default route
+sudo ip route add default via $GATEWAY 
+
+Route exist but gateway unreachable 
+sudo ip neigh flush dev $NIC

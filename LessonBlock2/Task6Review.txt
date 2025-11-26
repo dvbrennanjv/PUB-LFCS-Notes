@@ -1,0 +1,65 @@
+Task A Routing Table + Static Routes
+----------------------------------------------------------------
+Show your route table
+Add the route 192.168.50.0/24 via 10.0.2.2
+Verify the route
+Delete the route
+
+
+REVIEW
+
+
+
+----------------------------------------------------------------
+
+Task B ARP / Neighbor Table
+----------------------------------------------------------------
+Show ARP table
+Clear ARP cache for enp0s3
+Ping your gateway 10.0.2.2
+Show ARP table again
+
+
+REVIEW
+
+----------------------------------------------------------------
+
+Task C Static Netplan
+----------------------------------------------------------------
+In /etc/netplan create a 01-static.yaml
+Configure
+IP: 10.0.2.60/24 , Gateway: 10.0.2.2, DNS: google.com
+Do a netplan try to see if it works
+
+confirm using ip addr and ip route
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task D Firewall Rules
+----------------------------------------------------------------
+Allow port 2222/TCP
+Deny all incoming from 10.0.2.80
+Show numbered rules
+Delete rule #1
+Show rules again
+
+
+REVIEW
+
+
+----------------------------------------------------------------
+
+Task E - Socket & Port Analysis
+----------------------------------------------------------------
+Show listening services
+Show only established TCP connections
+Show all UDP listeners
+
+
+REVIEW
+
+
+----------------------------------------------------------------
